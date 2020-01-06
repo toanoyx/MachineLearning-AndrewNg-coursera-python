@@ -40,6 +40,7 @@ plt.figure()
 plt.plot(np.arange(J_history.size), J_history)
 plt.xlabel('Number of iterations')
 plt.ylabel('Cost J')
+plt.show()
 
 # 打印求解的最优的参数
 print('Theta computed from gradient descent : \n{}'.format(theta))
