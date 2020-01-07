@@ -2,7 +2,7 @@ ex1_multi.py 程序主入口
 
 ex1data2.txt 需要用到的数据集
 
-feature_normalize.py  特征缩放
+feature_normalize.py  特征缩放方法
 
 gradient_descent_multi.py  梯度向下算法
 
