@@ -69,12 +69,13 @@ def gradf(params, *args):
 
 res = optimize.fmin_cg(f,x0=params,fprime=gradf,args=args,maxiter=500)
 
+
 theta_min = np.matrix(result[0])
 predictions = predict(theta_min, X)
 print('classification report : ')
 print(classification_report(y, predictions))
 prob = sigmoid(np.dot(np.array([[1,45,85]]),res))
-print("For a student with scores 45 and 85, we predict an admission ")
+print("For a student with scores 45 and 85, we predict an admission :" + str(prob))
 print("Expected value: 0.775 +/- 0.002")
 correct = [1 if ((a == 1 and b == 1) or (a == 0 and b == 0)) else 0 for (a, b) in zip(predictions, y)]
 accuracy = (sum(map(int, correct)) % len(correct))
