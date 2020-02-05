@@ -4,7 +4,6 @@ import scipy.optimize as opt
 from costFunctionReg import *
 from gradientReg import *
 from predict import *
-from boundary import *
 
 """ 第1部分 可视化数据集 """
 
