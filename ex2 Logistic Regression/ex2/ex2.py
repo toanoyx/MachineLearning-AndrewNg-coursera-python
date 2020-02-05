@@ -68,8 +68,6 @@ def gradf(params, *args):
 
 
 res = optimize.fmin_cg(f,x0=params,fprime=gradf,args=args,maxiter=500)
-
-
 theta_min = np.matrix(result[0])
 predictions = predict(theta_min, X)
 print('classification report : ')
