@@ -59,5 +59,3 @@ correct = [1 if ((a == 1 and b == 1) or (a == 0 and b == 0)) else 0 for (a, b) i
 accuracy = (sum(map(int, correct)) % len(correct))
 print('accuracy = {0}%'.format(accuracy))
 
-draw_boundary(power=6, l=1)
-
